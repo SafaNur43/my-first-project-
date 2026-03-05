@@ -42,3 +42,7 @@ h2 {
 #nav a:hover {
      border-bottom: 1px solid #666262;
 }
+
+.active {
+     border-bottom: 1px solid #666262;
+}

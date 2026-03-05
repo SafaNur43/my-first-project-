@@ -38,3 +38,7 @@ h2 {
     text-decoration: none;
     color: inherit;
 }
+
+#nav a:hover {
+     border-bottom: 1px solid #666262;
+}

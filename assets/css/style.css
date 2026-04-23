@@ -51,10 +51,24 @@ h2 {
     height: 600px;
     width: 100%;
     background: url("assets/images/pexels-shameel-mukkath-3421394-5175537.jpg") no-repeat center center; 
+    animation-name: hero-image-zoom;
+    animation-duration: 5s; 
+    animation-fill-mode: forwards;
 }
 
 #hero-outer {
     height: 600px;
     width: 100%;
     overflow: hidden;
+}
+
+@keyframes hero-image-zoom {
+    from {
+       transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.1);
+    }
+
 }

@@ -186,6 +186,11 @@ h2 {
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
+   .ethos-left,
+   .ethos-right,
+   .ethos-image {
+    flex: 1;
+}
 
 
 

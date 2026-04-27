@@ -330,6 +330,67 @@ h2 {
     }
 }
 
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.footer-container h3 {
+    font-family: Oswald;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+/* Contact info */
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 90%;
+}
+
+.footer-contact i {
+    color: #c5a47e;
+    margin-right: 8px;
+}
+
+/* Map */
+.footer-map {
+    margin: 30px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* Social icons */
+.social-links a {
+    margin: 0 10px;
+    color: #c5a47e;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.social-links a:hover {
+    color: #fff;
+}
+
+/* Footer text */
+footer p {
+    margin-top: 20px;
+    font-size: 80%;
+    color: #aaa;
+}
+
 
 
 

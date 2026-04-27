@@ -1,107 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- External Icons (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
     <title>Italian Restaurant</title>
+
+    <!-- Main Stylesheet -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
+
+    <!-- ================= HEADER / NAVIGATION ================= -->
     <header>
+        <!-- Logo -->
         <a href="index.html">
             <h2 id="logo">Italian Restaurant</h2>
         </a>
+
+        <!-- Navigation Menu -->
         <nav>
             <ul id="nav">
-                
-               <li>
-                    <a href="#">Contact</a>
-                </li>
-
-                 <li>
-                    <a href="#">About</a>
-                </li>
-
-                 <li>
-                    <a href="#">Menu</a>
-                </li>
-                <li>
-                    <a class="active" href="index.html">Home</a>
-                </li>
-                
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- ================= HERO SECTION ================= -->
     <section id="hero-outer">
+        <!-- Background Image -->
         <div id="hero-image"></div>
+
+        <!-- Hero Text Overlay -->
         <div id="cover-text">
             <h3>Taste Italy in every bite</h3>
             <h3>Fresh, Authentic, Unforgettable</h3>
-            </div>
-     </section>
-
-
-    <!-- Restaurant Ethos Section -->
-
-     <section id="ethos">
-
-     <h2>Why Dine With Us</h2>
-
-    <div class="ethos-container">
-
-        <!-- Left Side -->
-         
-        <div class="ethos-left">
-
-    <div class="ethos-item">
-        <h3>Timeless Craftsmanship</h3>
-        <div class="ethos-line"></div>
-        <p>Traditional recipes prepared with passion and precision.</p>
-    </div>
-
-    <div class="ethos-item">
-        <h3>Authentic Flavours</h3>
-        <div class="ethos-line"></div>
-        <p>Rich, bold tastes inspired by true Italian heritage.</p>
-    </div>
-
-</div>
-
-
-<div class="ethos-image">
-    <img src="assets/images/pexels-am83-29436323.jpg" alt="Italian wine">
-</div>
-
-
-<div class="ethos-right">
-
-    <div class="ethos-item">
-        <h3>Finest Ingredients</h3>
-        <div class="ethos-line"></div>
-        <p>Only the highest quality ingredients sourced locally and from Italy.</p>
-    </div>
-
-    <div class="ethos-item">
-        <h3>Elegant Atmosphere</h3>
-        <div class="ethos-line"></div>
-        <p>A refined setting for unforgettable dining experiences.</p>
-    </div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-       
-    <section>
-        running locations, distances and times in here
+        </div>
     </section>
+
+    <!-- ================= RESTAURANT ETHOS SECTION ================= -->
+    <section id="ethos">
+
+        <!-- Section Heading -->
+        <h2 class="section-heading">Why Dine With Us</h2>
+
+        <div class="ethos-container">
+
+            <!-- Left Ethos Content -->
+            <div class="ethos-left">
+
+                <div class="ethos-item">
+                    <h3>Timeless Craftsmanship</h3>
+                    <div class="ethos-line"></div>
+                    <p>Traditional recipes prepared with passion and precision.</p>
+                </div>
+
+                <div class="ethos-item">
+                    <h3>Authentic Flavours</h3>
+                    <div class="ethos-line"></div>
+                    <p>Rich, bold tastes inspired by true Italian heritage.</p>
+                </div>
+
+            </div>
+
+            <!-- Center Image -->
+            <div class="ethos-image">
+                <img src="assets/images/pexels-am83-29436323.jpg" alt="Italian wine">
+            </div>
+
+            <!-- Right Ethos Content -->
+            <div class="ethos-right">
+
+                <div class="ethos-item">
+                    <h3>Finest Ingredients</h3>
+                    <div class="ethos-line"></div>
+                    <p>Only the highest quality ingredients sourced locally and from Italy.</p>
+                </div>
+
+                <div class="ethos-item">
+                    <h3>Elegant Atmosphere</h3>
+                    <div class="ethos-line"></div>
+                    <p>A refined setting for unforgettable dining experiences.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= LOCATIONS / MEETINGS SECTION ================= -->
+    <section id="meetings">
+
+        <!-- Section Heading -->
+        <h2 class="section-heading">Visit Us</h2>
+
+        <div class="meetings-container">
+
+            <!-- Location Panel: Rome -->
+            <div class="meeting-panel">
+                <div class="panel-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3><i class="fas fa-map-marker-alt"></i> Rome</h3>
+                <p>Piazza Navona</p>
+                <p><i class="fas fa-clock"></i> Mon-Sun: 12:00-23:00</p>
+            </div>
+
+            <!-- Location Panel: Milan -->
+            <div class="meeting-panel">
+                <div class="panel-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3><i class="fas fa-map-marker-alt"></i> Milan</h3>
+                <p>Via Monte Napoleone</p>
+                <p><i class="fas fa-clock"></i> Mon–Sun: 12:00 – 23:00</p>
+            </div>
+
+            <!-- Location Panel: Florence -->
+            <div class="meeting-panel">
+                <div class="panel-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3><i class="fas fa-map-marker-alt"></i> Florence</h3>
+                <p>Near Duomo</p>
+                <p><i class="fas fa-clock"></i> Mon–Sun: 12:00 – 23:00</p>
+            </div>
+
+            <!-- Location Panel: Venice -->
+            <div class="meeting-panel">
+                <div class="panel-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3><i class="fas fa-map-marker-alt"></i> Venice</h3>
+                <p>Canal District</p>
+                <p><i class="fas fa-clock"></i> Mon–Sun: 12:00 – 23:00</p>
+            </div>
+
+            <!-- Location Panel: Naples -->
+            <div class="meeting-panel">
+                <div class="panel-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3><i class="fas fa-map-marker-alt"></i> Naples</h3>
+                <p>Historic Center</p>
+                <p><i class="fas fa-clock"></i> Mon–Sun: 12:00 – 23:00</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
     <footer>
+        <!-- Social Links / Contact Info -->
         social links in here
     </footer>
+
 </body>
 </html>

@@ -1,9 +1,12 @@
+/* ================= GOOGLE FONTS ================= */
 @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
 
+
+/* ================= RESET / BASE STYLES ================= */
 * {
-     margin: 0;
-     padding: 0;
-     border: 0; 
+    margin: 0;
+    padding: 0;
+    border: 0; 
 }
 
 body {
@@ -18,6 +21,8 @@ h2 {
     color: #666262;
 }
 
+
+/* ================= HEADER / NAVIGATION ================= */
 #logo {
     float: left;
     font-size: 280%;
@@ -40,46 +45,47 @@ h2 {
 }
 
 #nav a:hover {
-     border-bottom: 1px solid #666262;
+    border-bottom: 1px solid #666262;
 }
 
 .active {
-     border-bottom: 1px solid #666262;
+    border-bottom: 1px solid #666262;
 }
 
+
+/* ================= HERO SECTION ================= */
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
 
 #hero-image {
     height: 600px;
     width: 100%;
     background: url("../images/pexels-shameel-mukkath-3421394-5175537.jpg") no-repeat center center;
     background-size: cover;
+
+    /* Zoom animation */
     animation-name: hero-image-zoom;
     animation-duration: 5s; 
     animation-fill-mode: forwards;
 }
 
-
-#hero-outer {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-    position: relative; /* IMPORTANT */
-}
-
-
-
+/* Hero zoom animation */
 @keyframes hero-image-zoom {
     from {
-       transform: scale(1);
+        transform: scale(1);
     }
-
     to {
-      transform: scale(1.1);
+        transform: scale(1.1);
     }
-
 }
 
-#cover-text, #cover-text h2 {
+/* Hero overlay text */
+#cover-text, 
+#cover-text h2 {
     color: #ffffff;
 }
 
@@ -88,8 +94,8 @@ h2 {
     bottom: 30px;
     right: 120px;
 
-    
     background-color: rgba(0, 0, 0, 0.6);
+
     font-size: 130%;
     font-family: Oswald;
     text-transform: uppercase;
@@ -100,10 +106,10 @@ h2 {
 
     padding-top: 30px;
     padding-left: 10px;
-    
 }
 
 
+/* ================= ETHOS SECTION ================= */
 #ethos {
     padding: 60px 20px;
     text-align: center;
@@ -113,8 +119,12 @@ h2 {
     margin-bottom: 40px;
 }
 
+/* Override heading color for light background */
+#ethos .section-heading {
+    color: #333;
+}
 
-
+/* Layout container */
 .ethos-container {
     display: flex;
     align-items: center;
@@ -122,35 +132,14 @@ h2 {
     gap: 40px;
 }
 
-/* Item spacing */
-.ethos-item {
-    margin-bottom: 50px;
+/* Left / Right columns */
+.ethos-left,
+.ethos-right,
+.ethos-image {
+    flex: 1;
 }
 
-/* Heading */
-.ethos-item h3 {
-    font-size: 120%;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-}
-
-/* Line */
-.ethos-line {
-    width: 100px;
-    height: 2px;
-    background-color: #c5a47e;
-    margin: 15px 0 20px 0;
-    transition: 0.3s;
-}
-
-/* Paragraph */
-.ethos-item p {
-    font-size: 90%;
-    line-height: 1.6;
-    color: #555;
-}
-
-/* Left side (mirror effect) */
+/* Left alignment (mirrored layout) */
 .ethos-left {
     text-align: right;
 }
@@ -159,24 +148,51 @@ h2 {
     margin-left: auto;
 }
 
-/* Right side */
+/* Right alignment */
 .ethos-right {
     text-align: left;
 }
 
-/* Subtle hover effect */
+/* Individual item */
+.ethos-item {
+    margin-bottom: 50px;
+}
+
+/* Item heading */
+.ethos-item h3 {
+    font-size: 120%;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+/* Decorative line */
+.ethos-line {
+    width: 100px;
+    height: 2px;
+    background-color: #c5a47e;
+    margin: 15px 0 20px 0;
+    transition: 0.3s;
+}
+
+/* Hover effect for line */
 .ethos-item:hover .ethos-line {
     width: 140px;
 }
 
+/* Paragraph text */
+.ethos-item p {
+    font-size: 90%;
+    line-height: 1.6;
+    color: #555;
+}
+
 /* Center image */
 .ethos-image {
-    width: 30%;
     display: flex;
     justify-content: center;
 }
 
-/* Your circle image (bigger) */
+/* Circular image styling */
 .ethos-image img {
     width: 350px;
     height: 350px;
@@ -186,13 +202,133 @@ h2 {
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-   .ethos-left,
-   .ethos-right,
-   .ethos-image {
-    flex: 1;
+
+/* ================= MEETINGS / LOCATIONS SECTION ================= */
+#meetings {
+    padding: 80px 20px;
+    text-align: center;
+
+    /* Background image */
+    background: url("../images/pexels-magda-ehlers-pexels-36132765.jpg") no-repeat center center;
+    background-size: cover;
+
+    position: relative;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Dark overlay */
+#meetings::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+/* Ensure content sits above overlay */
+.meetings-container,
+#meetings h2 {
+    position: relative;
+    z-index: 1;
+}
+
+/* Grid layout for panels */
+.meetings-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Individual panel */
+.meeting-panel {
+    padding: 30px 20px;
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+
+    backdrop-filter: blur(5px);
+    color: #fff;
+
+    transition: 0.3s;
+}
+
+/* Panel hover effect */
+.meeting-panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* Panel text spacing */
+.meeting-panel h3 {
+    margin-bottom: 10px;
+}
+
+.meeting-panel p {
+    margin: 5px 0;
+}
+
+/* Divider line inside panel */
+.meeting-panel p:first-of-type {
+    border-top: 1px solid #c5a47e;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+/* Icons styling */
+.meeting-panel i {
+    margin-right: 8px;
+    color: #c5a47e;
+}
+
+.panel-icon {
+    font-size: 24px;
+    color: #c5a47e;
+    margin-bottom: 10px;
 }
 
 
+/* ================= GLOBAL SECTION HEADINGS ================= */
+.section-heading {
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 200%;
+    margin-bottom: 50px;
+    position: relative;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Gold underline */
+.section-heading::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #c5a47e;
+    margin: 15px auto 0;
+}
+
+/* Heading animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 

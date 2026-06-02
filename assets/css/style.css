@@ -8,17 +8,13 @@
     border: 0;
 }
 
-/* GENERAL STYLES */
-
+/* ================= GENERAL STYLES ================= */
 body {
     font-family: Arial, sans-serif;
     color: #393434;
-    margin: 0;
 }
 
-
-/* NAVIGATION */
-
+/* ================= NAVIGATION ================= */
 .navbar {
     background: #f5f1e8;
     padding: 15px 30px;
@@ -31,8 +27,6 @@ body {
     list-style: none;
     display: flex;
     gap: 25px;
-    margin: 0;
-    padding: 0;
 }
 
 .navbar a {
@@ -45,7 +39,6 @@ body {
 .navbar a:hover {
     text-decoration: underline;
 }
-
 
 /* ================= GLOBAL HEADINGS ================= */
 h2 {
@@ -81,30 +74,6 @@ h2 {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* ================= NAVBAR ================= */
-.navbar {
-    background: #f5f1e8;
-    padding: 15px 20px;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    justify-content: flex-end;
-}
-
-.navbar a {
-    color: #5a4634;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.navbar a:hover {
-    text-decoration: underline;
 }
 
 /* ================= HERO SECTION ================= */
@@ -214,9 +183,8 @@ h2 {
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to [opacity: 1;]
-    
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 #meetings::before {
@@ -227,9 +195,10 @@ h2 {
     z-index: 0;
 }
 
-#meeting .section-heading {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
+
+#meetings .section-heading {
+    opacity: 1;
+    transform: translateY(0);
     z-index: 3;
     position: relative;
     font-weight: 800;
@@ -243,7 +212,6 @@ h2 {
 #meetings h2 {
     position: relative;
     z-index: 2;
-    color: #fff;
 }
 
 .meetings-container {
@@ -312,7 +280,6 @@ h2 {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    display: block;
 }
 
 .menu-info {
@@ -353,6 +320,16 @@ footer p {
     color: #aaa;
 }
 
+.footer-contact {
+    margin-bottom: 25px;
+}
+
+.social-links {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
 .social-links a {
     margin: 0 10px;
     color: #c5a47e;
@@ -363,3 +340,4 @@ footer p {
 .social-links a:hover {
     color: #fff;
 }
+

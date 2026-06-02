@@ -443,3 +443,51 @@ footer p {
     line-height: 1.6;
 }
 
+
+/* ---- Values Section ---- */
+
+.values-section {
+    background-color: #111;
+    padding: 70px 40px;
+}
+ 
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+ 
+.value-card {
+    text-align: center;
+    padding: 35px 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.04);
+    transition: 0.3s;
+}
+ 
+.value-card:hover {
+    background: rgba(255,255,255,0.09);
+    transform: translateY(-5px);
+}
+ 
+.value-card i {
+    font-size: 36px;
+    color: #c5a47e;
+    margin-bottom: 15px;
+}
+ 
+.value-card h3 {
+    font-family: Oswald;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+ 
+.value-card p {
+    font-size: 88%;
+    color: #aaa;
+    line-height: 1.6;
+}

@@ -394,3 +394,52 @@ footer p {
     color: #555;
 }
 
+/* ---- Team Cards ---- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+ 
+.team-card {
+    text-align: center;
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+ 
+.team-card:hover {
+    transform: translateY(-5px);
+}
+ 
+.team-card i {
+    font-size: 48px;
+    color: #c5a47e;
+    margin-bottom: 15px;
+}
+ 
+.team-card h3 {
+    font-family: Oswald;
+    letter-spacing: 2px;
+    color: #333;
+    margin-bottom: 5px;
+}
+ 
+.team-card .role {
+    font-size: 80%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c5a47e;
+    margin-bottom: 10px;
+}
+ 
+.team-card p {
+    font-size: 88%;
+    color: #666;
+    line-height: 1.6;
+}
+

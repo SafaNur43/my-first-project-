@@ -370,5 +370,27 @@ footer p {
     letter-spacing: 6px;
     text-transform: uppercase;
 }
+
+ /* ---- Story Section ---- */
+.about-section {
+    background-color: #f8f8f8;
+    padding: 70px 40px;
+}
  
+.about-section .section-heading {
+    color: #333;
+}
+ 
+.about-section .section-heading::after {
+    background-color: #c5a47e;
+}
+ 
+.about-story {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+    font-size: 105%;
+    line-height: 1.9;
+    color: #555;
+}
 

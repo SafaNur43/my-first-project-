@@ -341,3 +341,34 @@ footer p {
     color: #fff;
 }
 
+
+/* ================= ABOUT PAGE STYLES ================= */
+ 
+/* ---- Hero ---- */
+#about-hero {
+    background: url("../images/pexels-nadin-sh-78971847-34429975.jpg") no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+#about-hero h1 {
+    position: relative;
+    font-family: Oswald;
+    color: #fff;
+    font-size: 300%;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+ 
+

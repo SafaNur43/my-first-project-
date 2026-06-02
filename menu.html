@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
@@ -8,19 +9,21 @@
 </head>
 
 <body>
+ <header class="navbar">
+    <a href="index.html">
+        <h2 id="logo">Italian Restaurant</h2>
+    </a>
 
-    <header class="navbar">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>     
+        </ul>
+    </nav>
+</header>
+   <main>
         <section class="menu">
             <h2 class="section-heading">Our Menu</h2>
 
@@ -63,6 +66,12 @@
 
     <footer class="footer">
         <p>© 2026 Italian Restaurant. All Rights Reserved.</p>
+        <p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fas fa-map-marker-alt"></i>
+        </p>
     </footer>
 
 </body>

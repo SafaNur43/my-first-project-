@@ -497,7 +497,7 @@ footer p {
 /* ---- Hero ---- */
 #contact-hero {
     
-    background: url("../images/pexels-nadin-sh-78971847-34429975.jpg") no-repeat center center;
+    background: url("../images/pexels-renestrgar-33240983.jpg") no-repeat center center;
     background-size: cover;
     height: 250px;
     position: relative;
@@ -520,4 +520,15 @@ footer p {
     font-size: 300%;
     letter-spacing: 6px;
     text-transform: uppercase;
+}
+
+/* ---- Contact Section with Background Image ---- */
+
+.contact-section {
+    padding: 70px 40px;
+    position: relative;
+ 
+    background: url("../images/pexels-nadin-sh-78971847-34429975.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
